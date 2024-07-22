@@ -47,6 +47,7 @@ body {
 #winners, .dice p{
   font-size:50px ;
   text-wrap: nowrap;
+  mix-blend-mode: difference;
 }
 #winners{
   font-size: 80px;
