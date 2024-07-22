@@ -9,6 +9,13 @@
   display: inline-block;
 
 }
+body {
+  background-image: url('images/sukuna.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
 
 body {
   background-color: #393E46;
