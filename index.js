@@ -6,13 +6,13 @@ function imageclick(){
     var randomNumber2 = Math.floor(randomNumber2 * 6) + 1;
     document.getElementById("img2").src="images/dice" +randomNumber2 + ".png";
     if (randomNumber1>randomNumber2){
-        document.getElementById("win").innerHTML="player 1 win"
+        document.getElementById("winners").innerText=" 🚩 player 1 win"
     }
     else if (randomNumber2>randomNumber1){
-        document.getElementById("win").innerHTML="player 2 win"
+        document.getElementById("winners").innerText=" 🚩 player 2 win"
     }
     else{
-        document.getElementById("win").innerHTML="Draw"
+        document.getElementById("winners").innerText="Draw"
     }
 }
 

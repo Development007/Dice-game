@@ -14,7 +14,108 @@ body {
   background-size: cover; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the background image */
+  background-color: #393E46; /* Fallback background color */
 }
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  height: 100dvh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice {
+  text-align: center;
+  flex: 0px; /* Allow the dice to grow and shrink */
+  margin: 10px; /* Add some margin for spacing */
+}
+#btn{
+  width: max-content;
+    background: purple;
+    color: white;
+    padding: 5px 10px;
+    font-size: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#winners, .dice p{
+  font-size:50px ;
+  text-wrap: nowrap;
+}
+#winners{
+  font-size: 80px;
+}
+
+.dice-container{
+  display: flex;
+  justify-content: center;
+width: --webkit-fill-available;
+  align-items: center;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 320px) {
+  /* img {
+    max-width: 100px; /* Smaller size for small screens */
+  /* } */ */
+  .container{
+    height: 78dvh;
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  
+  .container{
+    height: 82dvh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    max-width: 150px; /* Larger size for larger screens */
+  }
+  .container{
+    height: 85dvh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  img {
+    max-width: 200px; /* Even larger size for desktops */
+  }
+  .container{
+    height: 90dvh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  img {
+    max-width: 250px; /* Largest size for large desktops */
+  }
+  .container{
+    height: 95dvh;
+  }
+}
+
+
+
+/* Adding some interactivity with CSS animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body {
+  animation: fadeIn 2s ease-in-out;
+}
+
 
 
 body {
